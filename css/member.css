@@ -1,0 +1,15 @@
+@import url(./common.css);
+
+.member_info_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.member_info_page .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
