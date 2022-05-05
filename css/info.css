@@ -1,74 +1,110 @@
 @import url(./common.css);
 
-.find_info{
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    display: flex;
+.find_info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  display: flex;
 }
-.find_info .left{
-    flex: 0 0 300px;
+.find_info .left {
+  flex: 0 0 300px;
 }
-.find_info .left .reference .item{
-    display: flex;
-    margin-bottom: 20px;
+.find_info .left .reference .item {
+  display: flex;
+  margin-bottom: 20px;
 }
-.find_info .left .reference .item:last-child{
-    margin-bottom: 0;
+.find_info .left .reference .item:last-child {
+  margin-bottom: 0;
 }
-.find_info .left .reference .item img{
-    width: 100px;
-    margin-right: 10px;
+.find_info .left .reference .item img {
+  width: 100px;
+  margin-right: 10px;
 }
-.find_info .right{
-    flex: 1;
+.find_info .right {
+  flex: 1;
 }
-.find_info .right .upload{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+.find_info .right .upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
-.find_info .right .upload .img{
-    width: 500px;
-    min-height: 300px;
-    background-color: #ddd;
+.find_info .right .upload .img {
+  width: 500px;
+  min-height: 300px;
+  background-color: #ddd;
 }
-.find_info .right .upload .alert_txt{
-    padding: 10px 0;
+.find_info .right .upload .alert_txt {
+  padding: 10px 0;
 }
-.find_info .send{
-    margin: 0 auto;
+.find_info .send {
+  margin: 0 auto;
 }
 
-.find_info2{
-    width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 30px;
+.find_info2 {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-.find_info2 .web_url{
-    width: 100%;
-    padding: 3px 10px;
+.find_info2 .web_url {
+  width: 100%;
+  padding: 3px 10px;
 }
-.find_info2 .alert_txt{
-    padding: 10px 0;
+.find_info2 .alert_txt {
+  padding: 10px 0;
 }
-.find_info2 .bottom{
+.find_info2 .bottom {
+  display: flex;
+  margin-bottom: 20px;
+}
+.find_info2 .bottom .left .upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.find_info2 .bottom .left .upload .img {
+  width: 500px;
+  min-height: 300px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+.find_info2 .send {
+  margin: 0 auto;
+}
+
+.ship_info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.ship_info .top {
+  flex: 0 0 100%;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.ship_info .frame{
     display: flex;
-    margin-bottom: 20px;
 }
-.find_info2 .bottom .left .upload{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+.ship_info .frame .left {
+  margin-right: 20px;
 }
-.find_info2 .bottom .left .upload .img{
-    width: 500px;
-    min-height: 300px;
-    background-color: #ddd;
-    margin-bottom: 20px;
+.ship_info .frame .left .upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
-.find_info2 .send{
-    margin: 0 auto;
+.ship_info .frame .left .upload .img {
+  width: 500px;
+  min-height: 300px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+.ship_info .frame .right{
+    font-size: 1.25rem;
+    flex: 1;
+}
+.ship_info .send {
+  margin: 0 auto;
 }
