@@ -1,9 +1,6 @@
 @import url(./common.css);
 
 .buy_list {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 30px;
 }
 .buy_list .list {
   margin: 0 -10px;
@@ -31,9 +28,6 @@
 }
 
 .buy_info {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 30px;
 }
 .buy_info .top {
   display: flex;

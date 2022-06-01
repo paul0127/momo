@@ -1,9 +1,6 @@
 @import url(./common.css);
 
 .find_info {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 30px;
   display: flex;
 }
 .find_info .left {
@@ -42,9 +39,6 @@
 }
 
 .find_info2 {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 30px;
 }
 .find_info2 .web_url {
   width: 100%;
@@ -73,10 +67,8 @@
   margin: 0 auto;
 }
 
+
 .ship_info {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 30px;
 }
 .ship_info .top {
   flex: 0 0 100%;
@@ -108,3 +100,4 @@
 .ship_info .send {
   margin: 0 auto;
 }
+

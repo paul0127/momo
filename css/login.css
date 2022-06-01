@@ -11,3 +11,8 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+@media (max-width: 1400px) {
+  .login_page .title {
+    font-size: 1.25rem;
+  }
+}
