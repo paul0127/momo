@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="zn-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOMOCHU韓國代購</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css' integrity='sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA==' crossorigin='anonymous'/>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"
+      integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
     <div class="header">
-        <a class="logo" href="index.html"><img src="./img/logo.jpg" alt="" /></a>
-        <div class="right_menu">
-          <a href="./regist.html" class="reg_btn">註冊</a>
-          <a href="./login.html" class="login_btn">登入</a>
-        </div>
+      <a class="logo" href="index.html"><img src="./img/logo.jpg" alt="" /></a>
+      <div class="right_menu">
+        <a href="./regist.html" class="reg_btn">註冊</a>
+        <a href="./login.html" class="login_btn">登入</a>
       </div>
+    </div>
     <div class="content">
-        <div class="menu">
-            <a href="./index_menu.html"><img src="./img/icon01.jpg" alt=""></a>
-            <a href="./index_menu2.html"><img src="./img/icon02.jpg" alt=""></a>
-            <a href="./index_menu3.html"><img src="./img/icon03.jpg" alt=""></a>
-        </div>
+      <div class="menu">
+        <a id="menu_btn01"><img src="./img/icon01.jpg" alt="" /></a>
+        <a id="menu_btn02"><img src="./img/icon02.jpg" alt="" /></a>
+        <a id="menu_btn03"><img src="./img/icon03.jpg" alt="" /></a>
+      </div>
+      <div class="menu_sub" id="menu01">
+        <a href="./find_info.html">東大門服飾追加系統</a>
+        <a href="./find_info2.html">商品代購成立訂單區</a>
+      </div>
+      <div class="menu_sub" id="menu02">
+        <a href="">韓國物流及台灣報關 </a>
+        <a href="./ship_info.html">集貨集運成立訂單區 </a>
+      </div>
+      <div class="menu_sub" id="menu03">
+        <a href="./buy_list.html">服飾</a>
+        <a href="./buy_list.html">食品</a>
+        <a href="./buy_list.html">美妝</a>
+        <a href="./buy_list.html">其他</a>
+      </div>
     </div>
     <div class="footer">
-        <ul class="left">
-            <li>MOMOCHU韓國代購</li>
-            <li>地址：新北市三重區重新路一段146號一樓 </li>
-            <li>電話：02-29871866</li>
-        </ul>
-        <div class="right"><img src="./img/contact_icon.png" alt=""></div>
+      <ul class="left">
+        <li>MOMOCHU韓國代購</li>
+        <li>地址：新北市三重區重新路一段146號一樓</li>
+        <li>電話：02-29871866</li>
+      </ul>
+      <div class="right"><img src="./img/contact_icon.png" alt="" /></div>
     </div>
-</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.18/vue.js' integrity='sha512-vAl/vSCnL+gHF3h2bGnUOWs0tlJCd6T0SoWoKrMrE9dQmLEBVnYP5celRncFwGQXdWfK0mZMo/zAX5dZRG53Ow==' crossorigin='anonymous'></script>
+    <script>
+      let menu = document.querySelector('.menu')
+      let menu_btns = menu.querySelectorAll('a')
+      menu_btns.forEach((item) => {
+        item.addEventListener('click', () => {
+          let id = item.id.replace('_btn','')
+          let menu_sub = document.querySelector('#'+id)
+          console.log(menu_sub)
+          menu.classList.add('close')
+          menu_sub.classList.add('open')
+        })
+      })
+    </script>
+  </body>
 </html>

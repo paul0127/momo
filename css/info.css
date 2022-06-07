@@ -1,5 +1,6 @@
 @import url(./common.css);
 
+/*東大門服飾追加系統*/
 .find_info {
   display: flex;
 }
@@ -8,6 +9,7 @@
 }
 .find_info .left .reference .item {
   display: flex;
+
   margin-bottom: 20px;
 }
 .find_info .left .reference .item:last-child {
@@ -21,18 +23,57 @@
   flex: 1;
 }
 .find_info .right .upload {
+  margin-bottom: 30px;
+}
+.find_info .right .upload .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
-.find_info .right .upload .img {
+.find_info .right .upload .item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.find_info .right .upload .item .img {
   width: 500px;
   min-height: 300px;
   background-color: #ddd;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.find_info .right .upload .alert_txt {
+.find_info .right .upload .item .text {
+  width: 500px;
+  margin-top: 20px;
+}
+.find_info .right .upload .item .text textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  outline: none;
+}
+.find_info .right .upload .item .alert_txt {
   padding: 10px 0;
+}
+.find_info .right .add_item_btn {
+  width: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #5a5a5a;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.find_info .right .add_item_btn:hover {
+  opacity: 0.8;
 }
 .find_info .send {
   margin: 0 auto;
@@ -40,33 +81,71 @@
 
 .find_info2 {
 }
-.find_info2 .web_url {
+.find_info2 .upload .item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.find_info2 .upload .item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.find_info2 .upload .item .web_url {
   width: 100%;
   padding: 3px 10px;
 }
-.find_info2 .alert_txt {
+.find_info2 .upload .item .alert_txt {
   padding: 10px 0;
 }
-.find_info2 .bottom {
+.find_info2 .upload .item .bottom {
   display: flex;
-  margin-bottom: 20px;
 }
-.find_info2 .bottom .left .upload {
+.find_info2 .upload .item .bottom .left .upload {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.find_info2 .bottom .left .upload .img {
+.find_info2 .upload .item .bottom .left .upload .img {
   width: 500px;
   min-height: 300px;
   background-color: #ddd;
   margin-bottom: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+.find_info2 .upload .item .bottom .right {
+  margin-left: 30px;
+  flex: 1;
+}
+.find_info2 .upload .item .bottom .right textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  outline: none;
+}
+.find_info2 .add_item_btn {
+  width: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #5a5a5a;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.find_info2 .add_item_btn:hover {
+  opacity: 0.8;
+}
+
 .find_info2 .send {
   margin: 0 auto;
 }
-
 
 .ship_info {
 }
@@ -75,29 +154,50 @@
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
-.ship_info .frame{
-    display: flex;
+.ship_info .frame {
+  display: flex;
 }
 .ship_info .frame .left {
   margin-right: 20px;
 }
 .ship_info .frame .left .upload {
+  margin-bottom: 30px;
+}
+.ship_info .frame .left .upload .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .ship_info .frame .left .upload .img {
   width: 500px;
   min-height: 300px;
   background-color: #ddd;
   margin-bottom: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.ship_info .frame .right{
-    font-size: 1.25rem;
-    flex: 1;
+.ship_info .frame .right {
+  font-size: 1.25rem;
+  flex: 1;
+}
+.ship_info .add_item_btn {
+  width: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #5a5a5a;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.ship_info .add_item_btn:hover {
+  opacity: 0.8;
 }
 .ship_info .send {
   margin: 0 auto;
 }
-
