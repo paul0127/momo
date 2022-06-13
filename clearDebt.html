@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMOCHU韓國代購</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"
+      integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/member.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a class="logo" href="index.html"><img src="./img/logo.jpg" alt="" /></a>
+      <div class="right_menu">
+        <a href="./regist.html" class="reg_btn">註冊</a>
+        <a href="./login.html" class="login_btn">登入</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="member_info_page">
+        <div class="title">訂單確認</div>
+        <div class="list">
+          <div class="item">
+            <div class="table">
+              <div class="thead">
+                <div class="th">客戶名稱</div>
+                <div class="th">下單日期</div>
+                <div class="th">訂單編號</div>
+                <div class="th">訂單總金額</div>
+                <div class="th">操作</div>
+              </div>
+              <div class="tbody">
+                <div class="tr">
+                  <div class="td">{{item.o_user_xm}}</div>
+                  <div class="td">{{item.pubdate}}</div>
+                  <div class="td">{{item.o_code}}</div>
+                  <div class="td">{{item.o_money}}</div>
+                  <div class="td column">
+                    <button>明細</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="form">
+                <div class="top_title">帳單明細</div>
+                <div class="head">
+                  <div class="th">商品</div>
+                  <div class="th">數量</div>
+                  <div class="th">單價</div>
+                  <div class="th">合計金額</div>
+                </div>
+                <div class="body">
+                  <div class="tr">
+                    <div class="td">cj/6</div>
+                    <div class="td">1</div>
+                    <div class="td">500</div>
+                    <div class="td right">500</div>
+                  </div>
+                </div>
+                <div class="foot">
+                  <div class="tr">
+                    <div class="td right">貨款總計金額</div>
+                    <div class="td"></div>
+                    <div class="td right">287620</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">服務費</div>
+                    <div class="td">5%</div>
+                    <div class="td right">14381</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">合計</div>
+                    <div class="td"></div>
+                    <div class="td right">302000</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">空運費</div>
+                    <div class="td no_padding">
+                      <div class="s_td">10</div>
+                      <div class="s_td">KG</div>
+                      <div class="s_td">6500</div>
+                      <div class="s_td">單價</div>
+                    </div>
+                    <div class="td right">302000</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">匯率</div>
+                    <div class="td">40</div>
+                    <div class="td right">302000</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">台灣運費</div>
+                    <div class="td no_padding">
+                      <div class="s_td">10</div>
+                      <div class="s_td">KG</div>
+                      <div class="s_td">6500</div>
+                      <div class="s_td">單價</div>
+                    </div>
+                    <div class="td right">302000</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td right">總計</div>
+                    <div class="td"></div>
+                    <div class="td right">302000</div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"></div>
+                    <div class="td"></div>
+                    <div class="td"></div>
+                  </div>
+                </div>
+                <div class="payment">
+                  <div class="p_item"><span>匯款</span></div>
+                  <div class="p_item"><span>刷卡</span></div>
+                  <div class="p_item"></div>
+                  <div class="p_item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <ul class="left">
+        <li>MOMOCHU韓國代購</li>
+        <li>地址：新北市三重區重新路一段146號一樓</li>
+        <li>電話：02-29871866</li>
+      </ul>
+      <div class="right"><img src="./img/contact_icon.png" alt="" /></div>
+    </div>
+  </body>
+</html>
