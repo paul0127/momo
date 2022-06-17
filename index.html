@@ -23,7 +23,17 @@
     </div>
     <div class="content">
       <div class="menu">
-        <a id="menu_btn01"><img src="./img/icon01.jpg" alt="" /></a>
+        <a id="menu_btn01"
+          ><picture>
+            <source
+              srcset="./img/m_icon01.jpg"
+              media="(max-width: 1200px)"
+            />
+            <img
+              src="./img/icon01.jpg"
+              alt=""
+            /> </picture
+        ></a>
         <a id="menu_btn02"><img src="./img/icon02.jpg" alt="" /></a>
         <a id="menu_btn03"><img src="./img/icon03.jpg" alt="" /></a>
       </div>
@@ -50,14 +60,18 @@
       </ul>
       <div class="right"><img src="./img/contact_icon.png" alt="" /></div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.18/vue.js' integrity='sha512-vAl/vSCnL+gHF3h2bGnUOWs0tlJCd6T0SoWoKrMrE9dQmLEBVnYP5celRncFwGQXdWfK0mZMo/zAX5dZRG53Ow==' crossorigin='anonymous'></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.18/vue.js"
+      integrity="sha512-vAl/vSCnL+gHF3h2bGnUOWs0tlJCd6T0SoWoKrMrE9dQmLEBVnYP5celRncFwGQXdWfK0mZMo/zAX5dZRG53Ow=="
+      crossorigin="anonymous"
+    ></script>
     <script>
       let menu = document.querySelector('.menu')
       let menu_btns = menu.querySelectorAll('a')
       menu_btns.forEach((item) => {
         item.addEventListener('click', () => {
-          let id = item.id.replace('_btn','')
-          let menu_sub = document.querySelector('#'+id)
+          let id = item.id.replace('_btn', '')
+          let menu_sub = document.querySelector('#' + id)
           console.log(menu_sub)
           menu.classList.add('close')
           menu_sub.classList.add('open')

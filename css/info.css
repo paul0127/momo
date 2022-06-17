@@ -3,6 +3,7 @@
 /*東大門服飾追加系統*/
 .find_info {
   display: flex;
+  flex-wrap: wrap;
 }
 .find_info .left {
   flex: 0 0 300px;
@@ -37,6 +38,16 @@
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.find_info .right .upload .item .top {
+  display: flex;
+  margin-left: auto;
+}
+.find_info .right .upload .item .top span {
+  cursor: pointer;
+}
+.find_info .right .upload .item .top span:hover {
+  opacity: 0.8;
 }
 .find_info .right .upload .item .img {
   width: 500px;
@@ -78,6 +89,24 @@
 .find_info .send {
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .find_info .left {
+    flex: 0 0 100%;
+    display: none;
+  }
+  .find_info .right {
+    flex: 0 0 100%;
+  }
+  .find_info .left .reference .item span {
+    word-break: break-all;
+  }
+  .find_info .right .upload .item .img {
+    width: 300px;
+  }
+  .find_info .right .upload .item .text {
+    width: 100%;
+  }
+}
 
 .find_info2 {
 }
@@ -90,6 +119,17 @@
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.find_info2 .upload .item .top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.find_info2 .upload .item .top span {
+  cursor: pointer;
+}
+.find_info2 .upload .item .top span:hover {
+  opacity: 0.8;
 }
 .find_info2 .upload .item .web_url {
   width: 100%;
@@ -146,6 +186,22 @@
 .find_info2 .send {
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .find_info2 .upload .item .bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .find_info2 .upload .item .bottom .left .upload .img {
+    max-width: 300px;
+  }
+  .find_info2 .upload .item .bottom .right {
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+  .find_info2 .upload .item .bottom .right textarea {
+    min-height: 150px;
+  }
+}
 
 .ship_info {
 }
@@ -168,6 +224,16 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+}
+.ship_info .frame .left .upload .item .del {
+  display: flex;
+  margin-left: auto;
+}
+.ship_info .frame .left .upload .item .del span {
+  cursor: pointer;
+}
+.ship_info .frame .left .upload .item .del span:hover {
+  opacity: 0.8;
 }
 .ship_info .frame .left .upload .img {
   width: 500px;
@@ -200,4 +266,24 @@
 }
 .ship_info .send {
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .ship_info .top {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .ship_info .frame{
+    flex-wrap: wrap;
+  }
+  .ship_info .frame .left{
+    flex: 0 0 100%;
+    margin-right: 0;
+    order: 2;
+  }
+  .ship_info .frame .left .upload .img{
+    width: 300px;
+  }
+  .ship_info .frame .right{
+    order: 1;
+  }
 }

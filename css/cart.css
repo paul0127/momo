@@ -5,8 +5,8 @@
 }
 .cart .info .name {
   font-size: 1.75rem;
-  color: #82cbc4;
-  border-left: 5px solid #82cbc4;
+  color: #000;
+  border-left: 5px solid #000;
   padding-left: 10px;
   margin-bottom: 30px;
 }
@@ -44,8 +44,8 @@
   cursor: pointer;
 }
 .cart .info .list .item .brand_name input[type='checkbox']:checked + label {
-  background-color: #82cbc4;
-  border-color: #82cbc4;
+  background-color: #000;
+  border-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@
 }
 .cart .info .list .item .table .head .th {
   flex: 1;
-  color: #82cbc4;
+  color: #000;
   font-size: 1.35rem;
   padding: 10px;
   font-weight: 700;
@@ -129,7 +129,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #82cbc4;
+  background-color: #000;
   color: #fff;
   border: none;
   outline: none;
@@ -177,14 +177,14 @@
 }
 .cart .info .list .item .table .price {
   flex: 0 0 150px !important;
-  color: #82cbc4;
+  color: #000;
 }
 .cart .info .list .item .table .qty {
   flex: 0 0 100px !important;
 }
 .cart .info .list .item .table .m_total {
   flex: 0 0 150px !important;
-  color: #82cbc4;
+  color: #000;
 }
 .cart .info .list .item .table .operate {
   flex: 0 0 120px !important;
@@ -364,7 +364,7 @@
 }
 .cart .info .bottom .discount {
   display: flex;
-  background-color: #82cbc4;
+  background-color: #000;
   padding: 10px 15px;
   border-radius: 15px;
   font-size: 1.5rem;
@@ -415,7 +415,7 @@
   height: 40px;
   text-align: center;
   border: none;
-  background-color: #82cbc4;
+  background-color: #000;
   color: #fff;
   border-radius: 5px;
 }
@@ -486,8 +486,8 @@
 /* 付款頁 商品 */
 .payment .info .name {
   font-size: 1.75rem;
-  color: #82cbc4;
-  border-left: 5px solid #82cbc4;
+  color: #000;
+  border-left: 5px solid #000;
   padding-left: 10px;
   margin-bottom: 30px;
 }
@@ -678,7 +678,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #82cbc4;
+  background-color: #000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -705,9 +705,10 @@
   font-size: 1.25rem;
   text-align: center;
   color: #333333;
-  background-color: #82cbc4;
+  background-color: #000;
   padding: 10px 0;
   font-weight: bold;
+  color: #fff;
 }
 .payment .info .information .section .pay_logistic_select select {
   flex: 1;
@@ -976,8 +977,8 @@
 /* 結果 商品 */
 .result .info .name {
   font-size: 1.75rem;
-  color: #82cbc4;
-  border-left: 5px solid #82cbc4;
+  color: #000;
+  border-left: 5px solid #000;
   padding-left: 10px;
   margin-bottom: 30px;
 }
@@ -1075,6 +1076,7 @@
 }
 .result .info .table .foot .tr .td:last-child {
   color: #333 !important;
+  text-align: right;
 }
 .result .info .table .foot .alert {
   text-align: right;
@@ -1094,7 +1096,8 @@
   flex: 0 0 100px !important;
 }
 .result .info .table .m_total {
-  flex: 0 0 150px !important;
+  flex: 0 0 220px !important;
+  align-items: flex-end !important;
   color: #333;
 }
 .result .info .table .operate {
@@ -1104,9 +1107,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .result .info .back a {
-  background-color: #82cbc4;
+  background-color: #000;
   color: #fff;
   font-size: 1.5rem;
   padding: 7px 30px;

@@ -10,4 +10,11 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-
+@media (max-width: 1200px) {
+  .regist_page {
+    padding: 0 15px 20px 15px;
+  }
+  .regist_page .title {
+    font-size: 1.25rem;
+  }
+}

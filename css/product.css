@@ -26,6 +26,11 @@
 .buy_list .list .item .price {
   text-align: right;
 }
+@media (max-width: 1200px) {
+  .buy_list .list .item {
+    flex: 0 0 50%;
+  }
+}
 
 .buy_info {
 }
@@ -34,7 +39,7 @@
   margin-bottom: 30px;
 }
 .buy_info .top .image {
-  flex: 0 0 500px;
+  flex: 0 0 400px;
   margin-right: 50px;
 }
 .buy_info .top .image img {
@@ -72,6 +77,10 @@
 .buy_info .top .text .price {
   text-align: right;
   font-size: 1.5rem;
+}
+.buy_info .top .text .text_bottom{
+  max-width: 500px;
+  margin-left: auto;
 }
 .buy_info .top .text .qty {
   display: flex;
@@ -122,7 +131,23 @@
   font-size: 1.25rem;
   margin-bottom: 20px;
 }
-.buy_info .bottom .pro_desc img{
-	max-width:100% !important;
-	height:auto !important;
+.buy_info .bottom .pro_desc img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+@media (max-width: 1200px) {
+  .buy_info .top {
+    flex-wrap: wrap;
+  }
+  .buy_info .top .image {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .buy_info .top .text {
+    flex: 0 0 100%;
+  }
+  .buy_info .top .text .text_bottom{
+    max-width: 100%;
+    margin-left: 0;
+  }
 }

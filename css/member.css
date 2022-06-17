@@ -13,9 +13,16 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+@media (max-width: 1200px) {
+  .member_info_page .title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+}
 
 .member_info_page .list {
   width: 100%;
+  padding: 0 10px;
 }
 .member_info_page .list .item {
   margin-bottom: 20px;
@@ -116,8 +123,8 @@
   display: none;
 }
 .member_info_page .list .item.open .detail {
-    display: block;
-    border-bottom: none;
+  display: block;
+  border-bottom: none;
 }
 .member_info_page .list .item .detail .form .top_title {
   display: flex;
@@ -228,33 +235,33 @@
   opacity: 0.8;
 }
 
-.member_info_page .list .item .payment_info{
-    margin-top: 40px;
-    margin-left: -10px;
-    margin-right: -10px;
-    display: flex;
-    flex-wrap: wrap;
+.member_info_page .list .item .payment_info {
+  margin-top: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.member_info_page .list .item .payment_info .payment_item{
-    flex: 0 0 50%;
-    padding: 0 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+.member_info_page .list .item .payment_info .payment_item {
+  flex: 0 0 50%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
-.member_info_page .list .item .payment_info .payment_item.full{
-    flex: 0 0 100%;
+.member_info_page .list .item .payment_info .payment_item.full {
+  flex: 0 0 100%;
 }
-.member_info_page .list .item .payment_info .payment_item label{
-    flex: 0 0 70px;
-    text-align: right;
-    margin-right: 10px;
+.member_info_page .list .item .payment_info .payment_item label {
+  flex: 0 0 70px;
+  text-align: right;
+  margin-right: 10px;
 }
-.member_info_page .list .item .payment_info .payment_item input{
-    flex: 0 0 calc(100% - 80px);
-    max-width: 100%;
-    padding: 5px 15px;
-    border-radius: 50px;
-    outline: none;
-    border: 1px solid #000;
+.member_info_page .list .item .payment_info .payment_item input {
+  flex: 0 0 calc(100% - 80px);
+  max-width: 100%;
+  padding: 5px 15px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #000;
 }

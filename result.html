@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMOCHU韓國代購</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"
+      integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a class="logo" href="index.html"><img src="./img/logo.jpg" alt="" /></a>
+      <div class="right_menu">
+        <a href="./regist.html" class="reg_btn">註冊</a>
+        <a href="./login.html" class="login_btn">登入</a>
+      </div>
+    </div>
+    <div class="container custom">
+		  <div class="title">
+			<ul class="bread">
+			  <li><a href="#">會員專區</a></li>
+			</ul>
+		  </div>
+		  <div class="page result">
+			<div class="info">
+			  <div class="name">訂單明細</div>
+			  <div class="paymentInfo">
+				<div class="item">
+				  <label for="">訂單編號</label><span>{$info['o_code']}</span>
+				</div>
+				<div class="br_line"></div>
+				<div class="item">
+				  <label for="">付款方式</label><span>信用卡刷卡</span>
+				</div>
+				<div class="item">
+				  <label for="">寄送方式</label>
+				  <span>
+					<php>
+					if($info['LogisticsSubType'] == 'UNIMARTC2C'){
+						echo '7-11超商取貨';
+					} 
+					if($info['LogisticsSubType'] == 'FAMIC2C'){
+						echo '全家超商取貨';
+					} 
+					if(empty($info['LogisticsSubType'])){
+						echo '公司宅配';
+					} 
+					</php>
+				  </span>
+				</div>
+				<div class="item">
+				  <label for="">收件人</label><span>{$info['receiver_xm']}</span>
+				</div>
+				<div class="item">
+				  <label for="">聯絡手機</label><span>{$info['phone']}</span>
+				</div>
+				<div class="item">
+				  <label for="">聯絡市話</label><span>{$info['tel']}</span>
+				</div>
+				<div class="br_line"></div>
+				<php>if(empty($info['LogisticsSubType'])){</php>
+				<div class="item">
+				  <label for="">配送地址</label><span>{$info['addr']}</span>
+				</div>
+				<php>}else{</php>
+				<div class="item">
+				  <label for="">配送超商編號</label><span>{$info['CVSStoreID']}</span>
+				</div>
+				<div class="br_line"></div>
+				<div class="item">
+				  <label for="">配送超商門市</label><span>{$info['CVSStoreName']}</span>
+				</div>
+				<div class="br_line"></div>
+				<div class="item">
+				  <label for="">配送超商地址</label><span>{$info['CVSAddress']}</span>
+				</div>
+				<php>}</php>
+			  </div>
+			  <div class="table">
+				<div class="head">
+				  <div class="th product_name">商品</div>
+				  <div class="th spec">規格</div>
+				  <div class="th price">單價</div>
+				  <div class="th qty">數量</div>
+				  <div class="th m_total">小計</div>
+				</div>
+				<div class="body">
+				  <volist name="list" id="val">
+				  <div class="tr">
+					<div class="td product_name">
+					  {$val['o_product']}
+					</div>
+					<div class="td spec">{$val['specification']}</div>
+					<div class="td price" data-label="單價:">${$val['o_price']}</div>
+					<div class="td qty" data-label="數量:">{$val['o_num']}</div>
+					<div class="td m_total" data-label="小計:">$<php>echo floatval($val['o_price']) * floatval($val['o_num']);</php></div>
+				  </div>
+				  </volist>
+				</div>
+				<div class="foot">
+				  <div class="tr">
+					<div class="td">小計</div>
+					<div class="td m_total">
+						$
+						<php>
+							$total = 0;
+							foreach($list as $key => $val){
+								$total = $total + floatval($val['o_price']) * floatval($val['o_num']);
+							}
+							echo $total;
+						</php>
+					</div>
+				  </div>
+				  <neq name="info['o_discount']" value="0">
+				  <div class="tr">
+					<div class="td">折扣</div>
+					<div class="td m_total">-${$info['o_discount']}</div>
+				  </div>
+				  </neq>
+				  <div class="tr">
+					<div class="td">運費</div>
+					<div class="td m_total">${$info['o_yf']}</div>
+				  </div>
+				  <div class="tr">
+					<div class="td">應付總額</div>
+					<div class="td m_total">$<php>echo $total + floatval($info['o_yf']) - floatval($info['o_discount']);</php></div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="back">
+				<a href="./">回首頁</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+    <div class="footer">
+      <ul class="left">
+        <li>MOMOCHU韓國代購</li>
+        <li>地址：新北市三重區重新路一段146號一樓</li>
+        <li>電話：02-29871866</li>
+      </ul>
+      <div class="right"><img src="./img/contact_icon.png" alt="" /></div>
+    </div>
+
+    <script>
+      let qty = document.querySelector(".buy_info .qty input[type='number']")
+      let qty_number
+
+      function plus_minus_qty(q) {
+        let qty_number = parseInt(qty.value)
+        if (q > 0) {
+          qty_number = qty_number + 1
+
+          qty.value = qty_number
+        }
+
+        if (q < 0 && qty_number > 1) {
+          qty_number = qty_number - 1
+
+          qty.value = qty_number
+        }
+      }
+    </script>
+  </body>
+</html>
